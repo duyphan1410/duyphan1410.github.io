@@ -65,7 +65,8 @@ document.head.appendChild(style);
 document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper(".mySwiper", {
         loop: true,
-        effect: "coverflow",
+        effect: "slide",
+        
         grabCursor: true,
         slidesPerView: 1,
         spaceBetween: 20,

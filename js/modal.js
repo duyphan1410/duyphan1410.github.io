@@ -6,7 +6,7 @@ function openModal(modalId) {
         modal.style.display = 'block';
         modal.classList.add('show');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
-        
+
         // Add fade-in animation
         setTimeout(() => {
             modal.classList.add('fade-in');
@@ -19,7 +19,7 @@ function closeModal(modalId) {
     if (modal) {
         modal.classList.remove('fade-in');
         modal.classList.add('fade-out');
-        
+
         // Remove modal after animation
         setTimeout(() => {
             modal.style.display = 'none';
@@ -30,7 +30,7 @@ function closeModal(modalId) {
 }
 
 // Đảm bảo tất cả modal được ẩn khi trang load
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const modals = document.querySelectorAll('.modal');
     modals.forEach(modal => {
         modal.style.display = 'none';
@@ -39,18 +39,27 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Close modal when clicking outside of modal content
-window.addEventListener('click', function(event) {
-    const modals = document.querySelectorAll('.modal');
-    modals.forEach(modal => {
-        if (event.target === modal) {
-            const modalId = modal.id;
-            closeModal(modalId);
+let isDragging = false;
+
+var swiper = new Swiper(".mySwiper", {
+    on: {
+        touchMove: () => { isDragging = true; },
+        touchEnd: () => { setTimeout(() => isDragging = false, 50); }
+    }
+});
+
+document.querySelectorAll('.modal').forEach(modal => {
+    modal.addEventListener('click', function (event) {
+        if (event.target.classList.contains('modal') && !isDragging) {
+            closeModal(this.id);
         }
     });
 });
 
+
+
 // Close modal with Escape key
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
         const modals = document.querySelectorAll('.modal');
         modals.forEach(modal => {
