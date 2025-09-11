@@ -1,435 +1,535 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phan Tien Duy - Web Developer</title>
-    
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/modal.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phan Tien Duy - Web Developer</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/modal.css">
+
+  <!-- SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <!-- SwiperJS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
+
 <body>
-    <!-- Header Section -->
-    <section class="header">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">PHAN TIEN DUY</h1>
-                <p class="hero-subtitle">Web Developer</p>
-                <a href="#projects" class="cta-button">View My Work</a>
-            </div>
-        </div>
-    </section>
+  <!-- Header Section -->
+  <section class="header">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            
-            <div class="projects-grid">
-                <!-- Social Network Website -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">🌐</div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Social Network Website</h3>
-                        <p class="project-description">
-                            A social networking website that allows users to share posts, connect with friends, and interact through likes and comments. Built with modern web technologies.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Laravel</span>
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">HTML/CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <button class="project-link demo-button" onclick="openModal('social-network-modal')">
-                                🎥 View Demo
-                            </button>
-                            <a href="https://github.com/duyphan1410/NNY-social" class="project-link" target="_blank">
-                                📱 GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PicPerfect -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">🎨</div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">PicPerfect - Image Editor</h3>
-                        <p class="project-description">
-                            A web-based image editing application allowing users to apply filters, crop images, and organize albums. Features intuitive UI and powerful editing tools.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">ASP.NET MVC</span>
-                            <span class="tech-tag">C#</span>
-                            <span class="tech-tag">SQLite</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">HTML/CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <button class="project-link demo-button" onclick="openModal('picperfect-modal')">
-                                🎥 View Demo
-                            </button>
-                            <a href="https://github.com/duyphan1410" class="project-link" target="_blank">
-                                📱 GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- DiaryApp -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">📱</div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">DiaryApp</h3>
-                        <p class="project-description">
-                            A mobile application that allows users to write, edit, and manage personal diary entries with a simple and intuitive interface. Cross-platform solution.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Android Studio</span>
-                            <span class="tech-tag">Git</span>
-                        </div>
-                        <div class="project-links">
-                            <button class="project-link demo-button" onclick="openModal('diary-modal')">
-                                🎥 View Demo
-                            </button>
-                            <a href="https://github.com/duyphan1410" class="project-link" target="_blank">
-                                📱 GitHub
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills">
-        <div class="container">
-            <h2 class="section-title" style="color: white;">Technical Skills</h2>
-            
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <ul class="skill-list">
-                        <li>PHP</li>
-                        <li>JavaScript</li>
-                        <li>C#</li>
-                        <li>Java</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
-                    <ul class="skill-list">
-                        <li>Laravel</li>
-                        <li>ASP.NET MVC</li>
-                        <li>React Native</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Database Management</h3>
-                    <ul class="skill-list">
-                        <li>MySQL</li>
-                        <li>SQLite</li>
-                        <li>MS SQL Server</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <ul class="skill-list">
-                        <li>Git & GitHub</li>
-                        <li>XAMPP</li>
-                        <li>Visual Studio</li>
-                        <li>REST API</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <div class="contact-text">tienduy1410@gmail.com</div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">📱</div>
-                    <div class="contact-text">0332460192</div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <div class="contact-text">Ho Chi Minh, Vietnam</div>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">💼</div>
-                    <div class="contact-text">
-                        <a href="https://github.com/duyphan1410" style="color: inherit; text-decoration: none;">GitHub Profile</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Modals -->
-    <!-- Social Network Modal -->
-    <div id="social-network-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">NNY Social Network</h2>
-                <p class="modal-subtitle">Complete Social Media Platform with Real-time Features</p>
-                <span class="close" onclick="closeModal('social-network-modal')">&times;</span>
-            </div>
-            <div class="modal-body">
-                <div class="demo-section">
-                    <h3>🚀 Project Overview</h3>
-                    <p>NNY Social Network is a comprehensive social media platform built with Laravel, featuring real-time interactions, user management, and modern web technologies. This project demonstrates full-stack development skills and understanding of social media platform architecture.</p>
-                    
-                    <div class="achievement-stats">
-                        <div class="stat-card">
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Core Features</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">6</div>
-                            <div class="stat-label">Months Development</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">2K+</div>
-                            <div class="stat-label">Lines of Code</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-number">8</div>
-                            <div class="stat-label">Database Tables</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="demo-section">
-                    <h3>⭐ Key Features</h3>
-                    <div class="feature-grid">
-                        <div class="feature-card">
-                            <h4>👤 User Authentication & Profiles</h4>
-                            <p>Complete user registration, login system with profile customization, avatar upload, and privacy settings.</p>
-                        </div>
-                        <div class="feature-card">
-                            <h4>📝 Post Creation & Management</h4>
-                            <p>Create, edit, delete posts with text, images. Rich text editor and media upload functionality.</p>
-                        </div>
-                        <div class="feature-card">
-                            <h4>❤️ Social Interactions</h4>
-                            <p>Like, comment, share system with real-time notifications and activity feeds.</p>
-                        </div>
-                        <div class="feature-card">
-                            <h4>👥 Friend System</h4>
-                            <p>Send/accept friend requests, manage connections, friend suggestions algorithm.</p>
-                        </div>
-                        <div class="feature-card">
-                            <h4>💬 Real-time Messaging</h4>
-                            <p>Private messaging system with online status, message status indicators.</p>
-                        </div>
-                        <div class="feature-card">
-                            <h4>🔍 Search & Discovery</h4>
-                            <p>Advanced search functionality for users, posts, and content filtering.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tech-details">
-                    <h4>🛠️ Technical Implementation</h4>
-                    <div class="tech-list">
-                        <div class="tech-item">
-                            <span>🌐</span> <strong>Backend:</strong> Laravel 8+ (PHP)
-                        </div>
-                        <div class="tech-item">
-                            <span>🎨</span> <strong>Frontend:</strong> Blade Templates, Bootstrap
-                        </div>
-                        <div class="tech-item">
-                            <span>🗄️</span> <strong>Database:</strong> MySQL with Eloquent ORM
-                        </div>
-                        <div class="tech-item">
-                            <span>🔐</span> <strong>Authentication:</strong> Laravel Auth System
-                        </div>
-                        <div class="tech-item">
-                            <span>📁</span> <strong>File Storage:</strong> Laravel Storage System
-                        </div>
-                        <div class="tech-item">
-                            <span>⚡</span> <strong>Real-time:</strong> AJAX & jQuery
-                        </div>
-                    </div>
-                </div>
-
-                <div class="demo-section">
-                    <h3>💡 Technical Challenges Solved</h3>
-                    <div class="feature-grid">
-                        <div class="feature-card">
-                            <h4>Database Optimization</h4>
-                            <p>Implemented efficient database relationships and queries for social media interactions, reducing load times by 60%.</p>
-                        </div>
-                        <div class="feature-card">
-                            <h4>Image Upload System</h4>
-                            <p>Built secure file upload with validation, resizing, and storage management using Laravel's file system.</p>
-                        </div>
-                        <div class="feature-card">
-                            <h4>Privacy & Security</h4>
-                            <p>Implemented comprehensive privacy controls and data validation to ensure secure user interactions.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="demo-section">
-                    <h3>📱 Responsive Design</h3>
-                    <p>The platform is fully responsive, providing optimal user experience across desktop, tablet, and mobile devices. Implemented mobile-first design approach with Bootstrap framework.</p>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">PHAN TIEN DUY</h1>
+        <p class="hero-subtitle">Web Developer</p>
+        <a href="#projects" class="cta-button">View My Work</a>
+      </div>
     </div>
+  </section>
 
-    <!-- PicPerfect Modal -->
-    <div id="picperfect-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">PicPerfect Image Editor</h2>
-                <p class="modal-subtitle">Web-based Image Editing Application</p>
-                <span class="close" onclick="closeModal('picperfect-modal')">&times;</span>
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="projects-grid">
+        <!-- Social Network Website -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🌐</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Social Network Website</h3>
+            <p class="project-description">
+              A social networking website that allows users to share posts, connect with friends, and interact through
+              likes and comments. Built with modern web technologies.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML/CSS</span>
             </div>
-            <div class="modal-body">
-                <div class="demo-section">
-                    <h3>🎨 Project Overview</h3>
-                    <p>PicPerfect is a comprehensive web-based image editing application built with ASP.NET MVC, providing users with powerful editing tools, filter systems, and album management features.</p>
-                </div>
-
-                <div class="demo-section">
-                    <h3>⭐ Key Features</h3>
-                    <div class="feature-grid">
-                        <div class="feature-card">
-                            <h4>🖼️ Image Upload & Management</h4>
-                            <p>Drag-and-drop upload system with support for multiple image formats and batch processing.</p>
-                        </div>
-                        <div class="feature-card">
-                            <h4>✂️ Advanced Editing Tools</h4>
-                            <p>Crop, resize, rotate, flip with real-time preview and undo/redo functionality.</p>
-                        </div>
-                        <div class="feature-card">
-                            <h4>🎭 Filter System</h4>
-                            <p>20+ professional filters including vintage, black & white, sepia, and custom color adjustments.</p>
-                        </div>
-                        <div class="feature-card">
-                            <h4>📁 Album Organization</h4>
-                            <p>Create and manage photo albums with tagging and categorization features.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tech-details">
-                    <h4>🛠️ Technical Stack</h4>
-                    <div class="tech-list">
-                        <div class="tech-item">
-                            <span>⚙️</span> <strong>Backend:</strong> ASP.NET MVC (C#)
-                        </div>
-                        <div class="tech-item">
-                            <span>🗃️</span> <strong>Database:</strong> SQLite
-                        </div>
-                        <div class="tech-item">
-                            <span>🎨</span> <strong>Frontend:</strong> HTML5, CSS3, JavaScript
-                        </div>
-                        <div class="tech-item">
-                            <span>🖼️</span> <strong>Image Processing:</strong> System.Drawing
-                        </div>
-                    </div>
-                </div>
+            <div class="project-links">
+              <button class="project-link demo-button" onclick="openModal('social-network-modal')">
+                🎥 View Demo
+              </button>
+              <a href="https://github.com/duyphan1410/NNY-social" class="project-link" target="_blank">
+                📱 GitHub
+              </a>
             </div>
+          </div>
         </div>
-    </div>
 
-    <!-- DiaryApp Modal -->
-    <div id="diary-modal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title">DiaryApp</h2>
-                <p class="modal-subtitle">Personal Diary Mobile Application</p>
-                <span class="close" onclick="closeModal('diary-modal')">&times;</span>
+        <!-- PicPerfect -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">🎨</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">PicPerfect - Image Editor</h3>
+            <p class="project-description">
+              A web-based image editing application allowing users to apply filters, crop images, and organize albums.
+              Features intuitive UI and powerful editing tools.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">ASP.NET MVC</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">HTML/CSS</span>
             </div>
-            <div class="modal-body">
-                <div class="demo-section">
-                    <h3>📱 Project Overview</h3>
-                    <p>DiaryApp is a cross-platform mobile application built with React Native, allowing users to create, manage, and organize their personal diary entries with a beautiful and intuitive interface.</p>
-                </div>
-
-                <div class="demo-section">
-                    <h3>⭐ Key Features</h3>
-                    <div class="feature-grid">
-                        <div class="feature-card">
-                            <h4>✍️ Rich Text Editor</h4>
-                            <p>Write diary entries with formatted text, emoji support, and mood tracking.</p>
-                        </div>
-                        <div class="feature-card">
-                            <h4>📅 Calendar Integration</h4>
-                            <p>View entries by date with calendar widget and daily writing reminders.</p>
-                        </div>
-                        <div class="feature-card">
-                            <h4>🔒 Privacy & Security</h4>
-                            <p>Secure local storage with optional password protection for sensitive entries.</p>
-                        </div>
-                        <div class="feature-card">
-                            <h4>🎨 Customizable Themes</h4>
-                            <p>Multiple color themes and font options for personalized writing experience.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tech-details">
-                    <h4>🛠️ Technical Implementation</h4>
-                    <div class="tech-list">
-                        <div class="tech-item">
-                            <span>📱</span> <strong>Framework:</strong> React Native
-                        </div>
-                        <div class="tech-item">
-                            <span>💾</span> <strong>Storage:</strong> AsyncStorage
-                        </div>
-                        <div class="tech-item">
-                            <span>📅</span> <strong>Calendar:</strong> React Native Calendar
-                        </div>
-                        <div class="tech-item">
-                            <span>🎨</span> <strong>UI:</strong> Native Components
-                        </div>
-                    </div>
-                </div>
+            <div class="project-links">
+              <button class="project-link demo-button" onclick="openModal('picperfect-modal')">
+                🎥 View Demo
+              </button>
+              <a href="https://github.com/duyphan1410" class="project-link" target="_blank">
+                📱 GitHub
+              </a>
             </div>
+          </div>
         </div>
-    </div>
 
-    <!-- JavaScript Files -->
-    <script src="js/main.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/animations.js"></script>
+        <!-- DiaryApp -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">📱</div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">DiaryApp</h3>
+            <p class="project-description">
+              A mobile application that allows users to write, edit, and manage personal diary entries with a simple and
+              intuitive interface. Cross-platform solution.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Android Studio</span>
+              <span class="tech-tag">Git</span>
+            </div>
+            <div class="project-links">
+              <button class="project-link demo-button" onclick="openModal('diary-modal')">
+                🎥 View Demo
+              </button>
+              <a href="https://github.com/duyphan1410" class="project-link" target="_blank">
+                📱 GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <div class="container">
+      <h2 class="section-title" style="color: white;">Technical Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <ul class="skill-list">
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>C#</li>
+            <li>Java</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Frameworks & Libraries</h3>
+          <ul class="skill-list">
+            <li>Laravel</li>
+            <li>ASP.NET MVC</li>
+            <li>React Native</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Database Management</h3>
+          <ul class="skill-list">
+            <li>MySQL</li>
+            <li>SQLite</li>
+            <li>MS SQL Server</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools & Others</h3>
+          <ul class="skill-list">
+            <li>Git & GitHub</li>
+            <li>XAMPP</li>
+            <li>Visual Studio</li>
+            <li>REST API</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-text">tienduy1410@gmail.com</div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div class="contact-text">0332460192</div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-text">Ho Chi Minh, Vietnam</div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">💼</div>
+          <div class="contact-text">
+            <a href="https://github.com/duyphan1410" style="color: inherit; text-decoration: none;">GitHub Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modals -->
+  <!-- Social Network Modal -->
+  <div id="social-network-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">NNY Social Network</h2>
+        <p class="modal-subtitle">Complete Social Media Platform with Real-time Features</p>
+        <span class="close" onclick="closeModal('social-network-modal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div class="demo-section">
+          <h3>🚀 Project Overview</h3>
+          <p>NNY Social Network is a comprehensive social media platform built with Laravel, featuring real-time
+            interactions, user management, and modern web technologies. This project demonstrates full-stack development
+            skills and understanding of social media platform architecture.</p>
+
+          <div class="achievement-stats">
+            <div class="stat-card">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Core Features</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">6</div>
+              <div class="stat-label">Months Development</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">2K+</div>
+              <div class="stat-label">Lines of Code</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">8</div>
+              <div class="stat-label">Database Tables</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://res.cloudinary.com/dwvt3snha/image/upload/v1757574409/Demo/homepage_nyohsy.png"
+                alt="Demo 1">
+              <div class="slide-label">
+                <span class="icon">🏠</span> Homepage – News Feed
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="https://res.cloudinary.com/dwvt3snha/image/upload/v1757574410/Demo/profile_ov5xme.png"
+                alt="Demo 2">
+              <div class="slide-label">
+                <span class="icon">👤</span> User Profile
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="https://res.cloudinary.com/dwvt3snha/image/upload/v1757574409/Demo/create-post_hcj7xx.png"
+                alt="Demo 3">
+              <div class="slide-label">
+                <span class="icon">✍️</span> Create/Edit Post
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="https://res.cloudinary.com/dwvt3snha/image/upload/v1757574410/Demo/chat-popup_rpxrxy.png"
+                alt="Demo 4">
+              <div class="slide-label">
+                <span class="icon">💬</span> Chat Realtime
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="https://res.cloudinary.com/dwvt3snha/image/upload/v1757574409/Demo/mention-comment_oje7sg.png"
+                alt="Demo 5">
+              <div class="slide-label">
+                <span class="icon">💡</span> Mention/Comment
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="https://res.cloudinary.com/dwvt3snha/image/upload/v1757574409/Demo/notification_s8pdtn.png"
+                alt="Demo 6">
+              <div class="slide-label">
+                <span class="icon">🔔</span> Notification
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="https://res.cloudinary.com/dwvt3snha/image/upload/v1757574409/Demo/notification-dropdown_jc5jlr.png"
+                alt="Demo 7">
+              <div class="slide-label">
+                <span class="icon">📥</span> Notification Dropdown
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="https://res.cloudinary.com/dwvt3snha/image/upload/v1757574410/Demo/admin-dashboard_a2run8.png"
+                alt="Demo 8">
+              <div class="slide-label">
+                <span class="icon">⚙️</span> Admin Dashboard
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+
+        <div class="demo-section">
+          <h3>⭐ Key Features</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4>👤 User Authentication & Profiles</h4>
+              <p>Complete user registration, login system with profile customization, avatar upload, and privacy
+                settings.</p>
+            </div>
+            <div class="feature-card">
+              <h4>📝 Post Creation & Management</h4>
+              <p>Create, edit, delete posts with text, images. Rich text editor and media upload functionality.</p>
+            </div>
+            <div class="feature-card">
+              <h4>❤️ Social Interactions</h4>
+              <p>Like, comment, share system with real-time notifications and activity feeds.</p>
+            </div>
+            <div class="feature-card">
+              <h4>👥 Friend System</h4>
+              <p>Send/accept friend requests, manage connections, friend suggestions algorithm.</p>
+            </div>
+            <div class="feature-card">
+              <h4>💬 Real-time Messaging</h4>
+              <p>Private messaging system with online status, message status indicators.</p>
+            </div>
+            <div class="feature-card">
+              <h4>🔍 Search & Discovery</h4>
+              <p>Advanced search functionality for users, posts, and content filtering.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-details">
+          <h4>🛠️ Technical Implementation</h4>
+          <div class="tech-list">
+            <div class="tech-item">
+              <span>🌐</span> <strong>Backend:</strong> Laravel 8+ (PHP)
+            </div>
+            <div class="tech-item">
+              <span>🎨</span> <strong>Frontend:</strong> Blade Templates, Bootstrap
+            </div>
+            <div class="tech-item">
+              <span>🗄️</span> <strong>Database:</strong> MySQL with Eloquent ORM
+            </div>
+            <div class="tech-item">
+              <span>🔐</span> <strong>Authentication:</strong> Laravel Auth System
+            </div>
+            <div class="tech-item">
+              <span>📁</span> <strong>File Storage:</strong> Laravel Storage System
+            </div>
+            <div class="tech-item">
+              <span>⚡</span> <strong>Real-time:</strong> AJAX & jQuery
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-section">
+          <h3>💡 Technical Challenges Solved</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4>Database Optimization</h4>
+              <p>Implemented efficient database relationships and queries for social media interactions, reducing load
+                times by 60%.</p>
+            </div>
+            <div class="feature-card">
+              <h4>Image Upload System</h4>
+              <p>Built secure file upload with validation, resizing, and storage management using Laravel's file
+                system.
+              </p>
+            </div>
+            <div class="feature-card">
+              <h4>Privacy & Security</h4>
+              <p>Implemented comprehensive privacy controls and data validation to ensure secure user interactions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-section">
+          <h3>📱 Responsive Design</h3>
+          <p>The platform is fully responsive, providing optimal user experience across desktop, tablet, and mobile
+            devices. Implemented mobile-first design approach with Bootstrap framework.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PicPerfect Modal -->
+  <div id="picperfect-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">PicPerfect Image Editor</h2>
+        <p class="modal-subtitle">Web-based Image Editing Application</p>
+        <span class="close" onclick="closeModal('picperfect-modal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div class="demo-section">
+          <h3>🎨 Project Overview</h3>
+          <p>PicPerfect is a comprehensive web-based image editing application built with ASP.NET MVC, providing users
+            with powerful editing tools, filter systems, and album management features.</p>
+        </div>
+
+        <div class="demo-section">
+          <h3>⭐ Key Features</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4>🖼️ Image Upload & Management</h4>
+              <p>Drag-and-drop upload system with support for multiple image formats and batch processing.</p>
+            </div>
+            <div class="feature-card">
+              <h4>✂️ Advanced Editing Tools</h4>
+              <p>Crop, resize, rotate, flip with real-time preview and undo/redo functionality.</p>
+            </div>
+            <div class="feature-card">
+              <h4>🎭 Filter System</h4>
+              <p>20+ professional filters including vintage, black & white, sepia, and custom color adjustments.</p>
+            </div>
+            <div class="feature-card">
+              <h4>📁 Album Organization</h4>
+              <p>Create and manage photo albums with tagging and categorization features.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-details">
+          <h4>🛠️ Technical Stack</h4>
+          <div class="tech-list">
+            <div class="tech-item">
+              <span>⚙️</span> <strong>Backend:</strong> ASP.NET MVC (C#)
+            </div>
+            <div class="tech-item">
+              <span>🗃️</span> <strong>Database:</strong> SQLite
+            </div>
+            <div class="tech-item">
+              <span>🎨</span> <strong>Frontend:</strong> HTML5, CSS3, JavaScript
+            </div>
+            <div class="tech-item">
+              <span>🖼️</span> <strong>Image Processing:</strong> System.Drawing
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DiaryApp Modal -->
+  <div id="diary-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">DiaryApp</h2>
+        <p class="modal-subtitle">Personal Diary Mobile Application</p>
+        <span class="close" onclick="closeModal('diary-modal')">&times;</span>
+      </div>
+      <div class="modal-body">
+        <div class="demo-section">
+          <h3>📱 Project Overview</h3>
+          <p>DiaryApp is a cross-platform mobile application built with React Native, allowing users to create,
+            manage,
+            and organize their personal diary entries with a beautiful and intuitive interface.</p>
+        </div>
+
+        <div class="demo-section">
+          <h3>⭐ Key Features</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <h4>✍️ Rich Text Editor</h4>
+              <p>Write diary entries with formatted text, emoji support, and mood tracking.</p>
+            </div>
+            <div class="feature-card">
+              <h4>📅 Calendar Integration</h4>
+              <p>View entries by date with calendar widget and daily writing reminders.</p>
+            </div>
+            <div class="feature-card">
+              <h4>🔒 Privacy & Security</h4>
+              <p>Secure local storage with optional password protection for sensitive entries.</p>
+            </div>
+            <div class="feature-card">
+              <h4>🎨 Customizable Themes</h4>
+              <p>Multiple color themes and font options for personalized writing experience.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-details">
+          <h4>🛠️ Technical Implementation</h4>
+          <div class="tech-list">
+            <div class="tech-item">
+              <span>📱</span> <strong>Framework:</strong> React Native
+            </div>
+            <div class="tech-item">
+              <span>💾</span> <strong>Storage:</strong> AsyncStorage
+            </div>
+            <div class="tech-item">
+              <span>📅</span> <strong>Calendar:</strong> React Native Calendar
+            </div>
+            <div class="tech-item">
+              <span>🎨</span> <strong>UI:</strong> Native Components
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="js/main.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/animations.js"></script>
 </body>
+
 </html>
