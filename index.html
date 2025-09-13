@@ -17,11 +17,18 @@
   <link rel="manifest" href="./assets/logo/site.webmanifest" />
 
   <!-- CSS Files -->
-  <link rel="preload" href="/css/main.min.css" as="style">
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="preload" href="css/main.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/main.min.css">
+  </noscript>
+
 
   <!-- SwiperJS CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  </noscript>
 </head>
 
 <body>
@@ -560,7 +567,6 @@
   <!-- SwiperJS JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <!-- JavaScript Files -->
-  <link rel="preload" href="/js/main.min.js" as="script">
   <script src="js/main.min.js" defer></script>
 </body>
 
